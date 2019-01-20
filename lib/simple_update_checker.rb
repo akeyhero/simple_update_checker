@@ -38,7 +38,11 @@ class SimpleUpdateChecker
           from    email
           to      email
           subject 'Updated!'
-          body    content
+          body    <<~EOM
+            #{content}
+            
+            URL: #{@url}
+          EOM
           charset Encoding::UTF_8
         end
         puts "Update found at: #{Time.new}"
