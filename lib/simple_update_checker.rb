@@ -1,9 +1,9 @@
 class SimpleUpdateChecker
-  def initialize(email, url, selector, wait)
+  def initialize(email, url, selector, interval)
     @email    = email
     @url      = url
     @selector = selector
-    @wait     = wait
+    @interval = interval
   end
 
   def start_session
@@ -16,7 +16,7 @@ class SimpleUpdateChecker
   def run
     while true
       check_update
-      sleep @wait * 60
+      sleep @interval * 60
     end
   end
 

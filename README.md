@@ -15,3 +15,5 @@ The Simple Update Checker also requires `phantomjs` ready to run.
 ```bash
 $ ./run.rb ${EMAIL} ${URL} ${CSS SELECTOR} ${INTERVAL IN MINS}
 ```
+
+You may be happy with `tmux` or `screen` .
