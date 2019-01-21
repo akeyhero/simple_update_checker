@@ -45,13 +45,15 @@ class SimpleUpdateChecker
           EOM
           charset Encoding::UTF_8
         end
-        puts "Update found at: #{Time.new}"
+        puts "Update found at #{Time.new}"
       else
-        puts "First check made at: #{Time.new}"
+        puts "First check made at #{Time.new}"
       end
 
       write_last_content_digest(content_digest)
     end
+  rescue Capybara::ElementNotFound => e
+    puts "Element #{@selector} not found at #{Time.new}"
   end
 
   def get_content
