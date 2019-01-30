@@ -1,6 +1,6 @@
 # The Simple Update Checker
 
-The Simple Update Checker will detect updates on a web page and notify you via emails.
+The Simple Update Checker will detect updates on a web page and notify that via emails for you.
 
 ## Setup
 
@@ -16,4 +16,4 @@ The Simple Update Checker also requires `phantomjs` ready to run.
 $ ./run.rb ${EMAIL} ${URL} ${CSS SELECTOR} ${INTERVAL IN MINS}
 ```
 
-You may be happy with `tmux` or `screen` .
+You may be happy running with `tmux` or `screen` .
